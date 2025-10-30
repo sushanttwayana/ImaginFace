@@ -1,0 +1,84 @@
+**/logs
+**/logs*
+# **/data/*
+**/checkpoints
+**/imgs*
+**/vals*
+**/samples*
+*.zip
+# **/saved_models/*
+**/__pycache__**
+DFstenv/
+.vscode
+
+code/saved_models
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+*.egg
+dist/
+build/
+*.so
+
+# Virtual environments (covers venv, Conda, etc.)
+venv/
+.venv/
+env/
+myenv/
+*.venv
+.conda/
+conda-meta/
+
+# Environment variables and secrets
+# .env
+# *.env
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.bak
+~*
+*.pid
+*.seed
+*.pot
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.iml
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Docker-related
+.docker/
+docker-compose.override.yaml
+*.dockerignore
+
+# Generated protobuf files (regenerate as needed)
+*/pb/*
+!*/pb/__init__.py
+
+# Other common ignores (if you add JS/CSS/ML/etc.)
+node_modules/
+bower_components/
+*.min.js
+*.min.css
+data/
+models/
+tmp/
+
+# Project-specific (add more if you have large files or outputs)
+app/requirements.txt  # If generated; otherwise keep
+*.proto~  # Backup proto files
