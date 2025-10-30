@@ -1,85 +1,81 @@
-**/logs
-**/logs*
-# **/data/*
-**/checkpoints
-**/imgs*
-**/vals*
-**/samples*
-*.zip
-# **/saved_models/*
-**/__pycache__**
-DFstenv/
-
-code/saved_models
-# Python-specific ignores
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.egg-info/
-.pytest_cache/
-*.egg
-dist/
-build/
-*.so
-
-# Virtual environments (covers venv, Conda, etc.)
-venv/
-.venv/
-env/
-myenv/
-*.venv
-.conda/
-conda-meta/
-
-# Environment variables and secrets
-# .env
-# *.env
-
-# Logs and temporary files
-*.log
-*.tmp
-*.swp
-*.bak
-~*
-*.pid
-*.seed
-*.pot
-
-# IDE/editor files
-.vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-*.iml
-*.swp
-
-# OS-specific files
-.DS_Store
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-
-# Docker-related
-.docker/
-docker-compose.override.yaml
-*.dockerignore
-
-# Generated protobuf files (regenerate as needed)
-*/pb/*
-!*/pb/__init__.py
-
-# Other common ignores (if you add JS/CSS/ML/etc.)
-node_modules/
-bower_components/
-*.min.js
-*.min.css
+# Data directories
 data/
 models/
+saved_models/
+logs/
+samples/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+myenv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Training artifacts
+checkpoints/
+training_logs/
+outputs/
+generated/
+
+# Dataset files
+*.csv
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Logs
+*.log
+logs/
+
+# Configuration files (if they contain sensitive data)
+# *.yml
+# *.yaml
+# *.json
+
+# Temporary files
+temp/
 tmp/
-
-# Project-specific (add more if you have large files or outputs)
-app/requirements.txt  # If generated; otherwise keep
-*.proto~  # Backup proto files
-
-.vscode
